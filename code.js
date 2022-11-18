@@ -1,6 +1,5 @@
 var group = ["image2", "image3", "description", "description2"];
 var stepValue = 5;
-var down = 0;
 var pass = getText("set_password");
 var use = getText("set_username")
 
@@ -50,11 +49,11 @@ onEvent("exchange", "click", function( ) {
 //   scrollGroup(group,dir);
 // });
 
-function scrollGroup(group, dir){
-  for (var i = 0; i < group.length; i++) {
-    setPosition(group[i],getXPosition(group[i]),getYPosition(group[i]) + dir);
-  }
-}
+// function scrollGroup(group, dir){
+//   for (var i = 0; i < group.length; i++) {
+//     setPosition(group[i],getXPosition(group[i]),getYPosition(group[i]) + dir);
+//   }
+// }
 
 onEvent("image2", "click", function( ) {
   setScreen("screen5");
