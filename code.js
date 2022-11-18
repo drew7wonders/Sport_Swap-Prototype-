@@ -37,18 +37,18 @@ onEvent("exchange", "click", function( ) {
   setScreen("screen4")
 });
 
-onEvent("btnUp", "click", function( ) {
-  var dir = -1*stepValue;
-  scrollGroup(group,dir);
-  down = down-1
-  console.log(down)
-});
+// onEvent("btnUp", "click", function( ) {
+//   var dir = -1*stepValue;
+//   scrollGroup(group,dir);
+//   down = down-1
+//   console.log(down)
+// });
 
 
-onEvent("btnDown", "click", function( ) {
-  var dir = 1*stepValue;
-  scrollGroup(group,dir);
-});
+// onEvent("btnDown", "click", function( ) {
+//   var dir = 1*stepValue;
+//   scrollGroup(group,dir);
+// });
 
 function scrollGroup(group, dir){
   for (var i = 0; i < group.length; i++) {
